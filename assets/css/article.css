@@ -53,19 +53,6 @@
 .header__nav--link svg{
     margin-right: 5px;
 }
-.progress__container{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-}
-.progress__bar {
-    height: 8px;
-    background: #04AA6D;
-    width: 0%;
-}
 .main__inner{
     padding: 60px 0;
 }
@@ -76,7 +63,28 @@
 .main__title{
     font-size: 36px;
     font-weight: 700;
-    padding-top: 60px;
+}
+.main__text p{
+    font-size: 24px;
+}
+.main__block{
+    border:  5px dashed #1E222E;
+    padding: 40px;
+    margin: 30px 0;
+}
+.main__tree__img{
+    width: 100%;
+    margin: 50px 0;
+}
+.double{
+    border-top: double 5px #1E222E;
+    border-bottom: double 5px #1E222E;
+}
+.double:first-child{
+    border-top: 5px dashed #1E222E;
+}
+.double:last-child{
+    border-bottom: 5px dashed #1E222E;
 }
 .footer{
     background-color: #1E222E;
