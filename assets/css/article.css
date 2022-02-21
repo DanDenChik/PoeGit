@@ -53,6 +53,19 @@
 .header__nav--link svg{
     margin-right: 5px;
 }
+.progress__container{
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+.progress__bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+}
 .main__inner{
     padding: 60px 0;
 }
@@ -75,6 +88,45 @@
 .main__tree__img{
     width: 100%;
     margin: 50px 0;
+}
+.main__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.main__quote{
+    line-height: 1.7;
+    color: lightslategray;
+    font-size: 18px;
+    font-style: italic;
+}
+.main__title{
+    padding-top: 30px;
+}
+.main__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.main__link{
+    color: #1E222E;
+    font-size: 24px;
+    font-weight: 700;
+    transition: ease-in-out .2s;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__img__class{
+    width: 100%;
+}
+.main__link:hover{
+    color: #5d6b97;
 }
 .double{
     border-top: double 5px #1E222E;
@@ -217,6 +269,12 @@
     height: 20px;
     margin-left: 10px;
 }
+
+@media (max-width:1200px){
+    .container{
+        max-width: 740px;
+    }
+}
 @media (max-width:768px){
     body.lock{
         overflow: hidden;
@@ -298,10 +356,28 @@
     .intro{
         background-position: -300px 0;
     }
+    .flex{
+        flex-direction: column;
+    }
+    .main__item{
+        width: 100%;
+    }
+    .header__nav a{
+        display: none;
+    }
+    .header__nav.active a{
+        display: block;
+    }
 }
 @media (max-width:480px){
     body.lock{
         overflow: hidden;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .main__item{
+        width: 100%;
     }
     .intro__title{
         font-size: 24px;
@@ -354,6 +430,10 @@
     .header__nav.active{
         top: 0;
     }
+    .main__title{
+        font-size: 24px;
+        text-align: center;
+    }
     .header__nav--link{
         margin: 20px 0;
         
@@ -383,6 +463,12 @@
         display: flex;
         justify-content: center;
         padding-bottom: 30px;
+    }
+    .header__nav a{
+        display: none;
+    }
+    .header__nav.active a{
+        display: block;
     }
     .about__right{
         width: 100%;

@@ -244,6 +244,24 @@
     z-index: 5;
     display: none;
 }
+.noContent{
+    display: none;
+}
+
+@media (max-width:1200px){
+    .container{
+        max-width: 740px;
+    }
+    .main__item--title{
+        font-size: 24px;
+        font-weight: 600;
+        transition: ease-in-out .2s;
+    }
+    .main__item--text{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
 @media (max-width:768px){
     body.lock{
         overflow: hidden;
@@ -324,6 +342,15 @@
     }
     .intro{
         background-position: -300px 0;
+    }
+    .main__item__grid{
+        width: 100%;
+    }
+    .header__nav a{
+        display: none;
+    }
+    .header__nav.active a{
+        display: block;
     }
 }
 @media (max-width:480px){
@@ -448,5 +475,14 @@
     }
     .about__btn{
         margin: 20px auto;
+    }
+    .main__item__grid{
+        width: 100%;
+    }
+    .header__nav a{
+        display: none;
+    }
+    .header__nav.active a{
+        display: block;
     }
 }

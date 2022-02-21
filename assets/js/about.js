@@ -16,6 +16,23 @@ $(document).ready(function(){
         dots:true,
         autoplay:true,
         centerMode:true,
+        responsive:[
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow:1,
+                    dots:false,
+                    centerMode:false,
+                }  
+            },{
+                breakpoint: 480,
+                settings:{
+                    slidesToShow:1,
+                    dots:false,
+                    centerMode:false,
+                }
+            }
+        ]
     });
 });
 $(document).ready(function(){
@@ -25,6 +42,23 @@ $(document).ready(function(){
         slidesToScroll:3,
         dots:true,
         autoplay:true,
+        responsive:[
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow:1,
+                    dots:false,
+                    slidesToScroll:1,
+                }  
+            },{
+                breakpoint: 480,
+                settings:{
+                    slidesToShow:1,
+                    slidesToScroll:1,
+                    dots:false,
+                }
+            }
+        ]
     });
 });
 $(document).ready(function(){

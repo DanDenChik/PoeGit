@@ -1,3 +1,5 @@
+window.onscroll = function() {ScrollFunction()};
+
 function ScrollFunction() {
     var scrolled;
     var winScroll;
@@ -5,12 +7,14 @@ function ScrollFunction() {
     winScroll = (document.body.scrollTop) || (document.documentElement.scrollTop);
     height = document.documentElement.scrollHeight - window.innerHeight ;
     scrolled = (winScroll / height) * 100;
+    console.log(scrolled);
     document.getElementById("progress__bar").style.width = scrolled + "%";
+
 }
 
 $(document).ready(function(){
     $(".header__burger").click(function(event){
       $(".header__burger, .header__nav").toggleClass('active');
-      $("body").toggleClass('lock')
+      $("body").toggleClass('lock');
     });
 });

@@ -338,6 +338,17 @@
     z-index: 5;
     display: none;
 }
+@media (max-width:1200px){
+    .container{
+        max-width: 740px;
+    }
+    .about__tabcontent{
+        height: 380px;
+    }
+    .builds__text{
+        font-size: 15px;
+    }
+}
 @media (max-width:768px){
     body.lock{
         overflow: hidden;
@@ -348,6 +359,12 @@
     .header__nav{
         flex-direction: column;
         transition: ease-in-out .2s;
+    }
+    .header__nav a{
+        display: none;
+    }
+    .header__nav.active a{
+        display: block;
     }
     .header__left{
         z-index: 5;
@@ -361,7 +378,6 @@
     }
     .header__nav{
         position: fixed;
-        top: 0;
         align-items: flex-start;
         left: 0;
         width: 100%;
@@ -409,6 +425,7 @@
     .builds__item{
         width: 100%;
         margin-bottom: 20px;
+        justify-content: flex-start;
     }
     .footer__right{
         display: none;
