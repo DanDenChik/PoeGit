@@ -338,6 +338,9 @@
     z-index: 5;
     display: none;
 }
+.about__tab--link.active{
+    background-color: #5d6b97;
+}
 @media (max-width:1200px){
     .container{
         max-width: 740px;
